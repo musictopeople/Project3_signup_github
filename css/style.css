@@ -152,7 +152,7 @@ h4 {
 
 /**Psuedo-Classes***************/
 
-input:checked {
+input[type="radio"]:checked {
     background-color: blue;
 }
 
