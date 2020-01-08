@@ -22,19 +22,6 @@ h1 {
     padding-bottom: 1em;
 }
 
-banner {
-    text-align: center;
-    width: 90%;
-}
-
-banner h2 {
-    margin-bottom: -10px;
-}
-
-banner p {
-    color: grey;
-}
-
 form,
 h2,
 .basic-info,
@@ -106,7 +93,7 @@ select {
 }
 
 textarea {
-    margin-top: -.75em;
+    margin-top: .25em;
     margin-bottom: 1em;
     padding-top: .15em;
     padding-bottom: .15em;
@@ -127,12 +114,38 @@ h4 {
     margin-bottom: 0;
 }
 
+fieldset {
+    border-style: none;
+}
+
+legend {
+    width: 100%;
+    font-size: 115%;
+}
+
+fieldset p {
+    margin-bottom: 0em;
+}
+
 /**Classes***************/
+
+.top-banner {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.top-banner h2 {
+    margin-bottom: -10px;
+}
+
+.top-banner p {
+    color: grey;
+}
 
 .newsletters {
     margin-left: 2.5%;
-    margin-top: -1.5em;
-    display: inline-bock
+    display: inline-block
 }
 
 .form-break {
@@ -152,10 +165,6 @@ h4 {
 
 /**Psuedo-Classes***************/
 
-input[type="radio"]:checked {
-    background-color: blue;
-}
-
 label:hover {
     color: black;
 }
@@ -172,7 +181,6 @@ textarea:hover {
 input:placeholder-shown {
     font-style: italic;
     text-align: right;
-    margin-right: 1em;
 }
 
 button:hover {
@@ -211,5 +219,4 @@ select {
 .zip {
     width: 15%;
 }
-
 }

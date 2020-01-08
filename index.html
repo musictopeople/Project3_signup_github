@@ -12,36 +12,36 @@
     <header>
     <h1>The Code Review</h1>
     </header>
-    <banner>
+    <div class="top-banner">
         <h2>Signup For Our Newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
-    </banner>
+    </div>
     <form action="index.html" method="post">
         <h2>Contact Information</h2>
         <div class="item">
         <label for="name">Full Name</label>
-        <input class="basic-info" type="text" id="name" name="user_name" placeholder="Required    " required>
+        <input class="basic-info" type="text" id="name" name="user_name" placeholder="Required  " required>
         </div>
         <div class="item">
         <label for="mail">Email</label>
-        <input class="basic-info" type="email" id="mail" name="user_email" placeholder="Required    " required>
+        <input class="basic-info" type="email" id="mail" name="user_email" placeholder="Required  " required>
         </div>
         <div class="item">
         <label for="telephone">Phone Number</label>
-        <input class="basic-info" type="tel" id="telephone" name="user_telephone">
+        <input class="basic-info" type="tel" id="telephone" name="user_telephone" placeholder="Optional  ">
         </div>
         <div class="item">
         <label for="address">Street Address</label>
-        <input class="basic-info" type="street-address" id="address" name="user_street-address">
+        <input class="basic-info" type="text" id="address" name="user_street-address" placeholder="Optional  ">
         </div>
         <div class="item">
         <label for="city">City</label>
-        <input class="basic-info" type="address-level1" id="city" name="user_city">
+        <input class="basic-info" type="text" id="city" name="user_city" placeholder="Optional  ">
         </div>
         <div class="item">
         <label for="state">State</label>
         <select id="state" class="item-6">
-        <optgroup>
+        <optgroup label="user_state">
             <option value="">Choose State</option>
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
@@ -98,9 +98,11 @@
         </div>
         <div class="item">
         <label for="zip">Zip Code</label>
-        <input class="zip" type="postal-code" id="zip" name="user_zip">
+        <input class="zip" type="number" id="zip" name="user_zip">
         </div>
-        <h2 class="form-break">Newsletter</h2>
+
+        <fieldset>
+            <legend class="form-break">Newsletter</legend>
         <p>Select the newsletters you would like to recieve</p>
         <div class="newsletters">
             <input type="checkbox" id="html_news" value="html_news" name="user_html_news">
@@ -115,7 +117,7 @@
             <label for="javascript_news">Javascript News</label>
         </div><br>
 
-        <p>Newsletter fromat</p>
+        <p>Newsletter format</p>
         <div class="newsletters">
             <input type="radio" id="html_text" value="html_format" name="format_text">
             <label for="html_text">HTML</label>
@@ -124,10 +126,10 @@
             <input type="radio" id="plain_text" value="plain_format" name="format_text">
             <label for="plain_text">Plain text</label>
         </div><br>
-
         <p>Other topics you'd like to hear about</p>
         <textarea id="topics" name="user_topics"></textarea>
         <button type="submit">Sign Up</button>
+    </fieldset>
     </form>
     <footer>
         <h4>Copyright The Code Review</h4>
