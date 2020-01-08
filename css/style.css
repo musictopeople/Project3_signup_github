@@ -169,10 +169,10 @@ label:hover {
     color: black;
 }
 
-.basic-info:hover,
-.zip:hover,
-select:hover,
-textarea:hover {
+.basic-info:focus,
+.zip:focus,
+select:focus,
+textarea:focus {
     transition-duration: 2s;
     background-color: white;
 }
