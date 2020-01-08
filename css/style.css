@@ -175,6 +175,11 @@ input:placeholder-shown {
     margin-right: 1em;
 }
 
+button:hover {
+    background-color: green;
+    transition-duration: 1s;
+}
+
 /**MEDIA**Q***************/
 
 @media (min-width: 768px) {
