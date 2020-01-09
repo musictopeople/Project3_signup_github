@@ -176,7 +176,7 @@ label:hover {
 .zip:focus,
 select:focus,
 textarea:focus {
-    transition-duration: 1s;
+    transition: background-color 1s;
     background-color: white;
 }
 
