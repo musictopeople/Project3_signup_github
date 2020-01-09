@@ -23,7 +23,6 @@ h1 {
 }
 
 form,
-h2,
 .basic-info,
 .zip,
 textarea,
@@ -163,6 +162,10 @@ fieldset p {
     font-size: 110%;
 }
 
+.topics {
+    margin-top: 1em;
+}
+
 /**Psuedo-Classes***************/
 
 label:hover {
@@ -173,7 +176,6 @@ label:hover {
 .zip:focus,
 select:focus,
 textarea:focus {
-    transition-duration: 2s;
     background-color: white;
 }
 

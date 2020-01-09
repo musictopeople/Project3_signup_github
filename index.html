@@ -17,7 +17,8 @@
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </div>
     <form action="index.html" method="post">
-        <h2>Contact Information</h2>
+        <fieldset>
+        <legend>Contact Information</legend>
         <div class="item">
         <label for="name">Full Name</label>
         <input class="basic-info" type="text" id="name" name="user_name" placeholder="Required  " required>
@@ -40,9 +41,8 @@
         </div>
         <div class="item">
         <label for="state">State</label>
-        <select id="state" class="item-6">
-        <optgroup label="user_state">
-            <option value="">Choose State</option>
+        <select id="state" name="state" class="item-6">
+        <optgroup label="choose state">
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
             <option value="ariona">Arizona</option>
@@ -98,9 +98,9 @@
         </div>
         <div class="item">
         <label for="zip">Zip Code</label>
-        <input class="zip" type="number" id="zip" name="user_zip">
+        <input class="zip" type="text" id="zip" name="user_zip">
         </div>
-
+        </fieldset>
         <fieldset>
             <legend class="form-break">Newsletter</legend>
         <p>Select the newsletters you would like to recieve</p>
@@ -126,8 +126,11 @@
             <input type="radio" id="plain_text" value="plain_format" name="format_text">
             <label for="plain_text">Plain text</label>
         </div><br>
-        <p>Other topics you'd like to hear about</p>
+        <div>
+        <div class="topics">
+        <label for="topics">Other topics you'd like to hear about</label>
         <textarea id="topics" name="user_topics"></textarea>
+        </div>
         <button type="submit">Sign Up</button>
     </fieldset>
     </form>
